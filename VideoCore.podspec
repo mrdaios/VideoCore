@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage            = "https://github.com/jgh-/VideoCore"
   s.license             = 'MIT'
   s.authors             = { "James Hurley" => "jamesghurley@gmail.com" }
-  s.source              = { :git => "https://github.com/jgh-/VideoCore.git", :tag => s.version.to_s }
+  s.source              = { :git => "https://github.com/jgh-/VideoCore.git", :branch => "master" }
 
   s.requires_arc        = false
 
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.libraries           = 'c++'
 
   s.dependency          'boost', '~> 1.51.0'
-  s.dependency          'glm', '~> 0.9.4.6'
+  s.dependency          'glm'
   s.dependency          'UriParser-cpp', '~> 0.1.3'
 
   s.xcconfig            = { "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/boost" }
